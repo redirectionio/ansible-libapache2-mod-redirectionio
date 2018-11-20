@@ -1,0 +1,25 @@
+---
+galaxy_info:
+  role_name: 'apache_module'
+  author: 'redirection.io'
+  description: Install libapache2-mod-redirectionio
+  license: MIT
+  min_ansible_version: 1.6
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - artful
+        - bionic
+        - cuttlefish
+    - name: Debian
+      versions:
+        - stretch
+        - buster
+    - name: EL
+      versions:
+        - 7
+        - 6
+  galaxy_tags:
+    - monitoring
+dependencies: []
