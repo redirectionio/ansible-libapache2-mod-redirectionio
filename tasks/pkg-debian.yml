@@ -23,4 +23,4 @@
 - name: Install libapache2-mod-redirectionio
   apt:
     name: libapache2-mod-redirectionio
-    state: latest
+    state: present
