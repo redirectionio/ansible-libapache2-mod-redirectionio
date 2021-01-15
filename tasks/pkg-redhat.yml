@@ -19,7 +19,9 @@
   yum_repository:
     name: redirectionio
     description: redirection.io
-    baseurl: "{{ redirectionio_packages_url }}rpm/{{ redirectionio_apache_module_channel }}/{{ redirectionio_apache_module_main_version }}/centos_{{ ansible_distribution_major_version }}"
+    baseurl: >
+      {{ redirectionio_packages_url }}rpm/{{ redirectionio_apache_module_channel }}/{{ redirectionio_apache_module_main_version }}/
+      centos_{{ ansible_distribution_major_version }}
     enabled: yes
     gpgcheck: yes
     state: present
