@@ -28,10 +28,10 @@
   when: redirectionio_apache_module_main_version > 1
 
 - name: Update yum cache
-  ansible.builtin.yum:
+  ansible.builtin.dnf:
     update_cache: true
 
 - name: Install libapache2-mod-redirectionio
-  ansible.builtin.yum:
+  ansible.builtin.dnf:
     name: "libapache2-mod-redirectionio-{{ redirectionio_apache_module_version }}"
     state: present
